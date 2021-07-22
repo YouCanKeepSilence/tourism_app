@@ -11,15 +11,18 @@ class Locations extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(title: Text('All locations')),
-      body: ListView(
-        children: locations
-            .map(
-              (location) => GestureDetector(
-                child: LocationItem(location.name, location.imagePath),
-                onTap: () => _onLocationTap(context, location.id),
-              ),
-            )
-            .toList(),
+      body: Container(
+        decoration: BoxDecoration(color: Colors.black.withOpacity(0.8)),
+        child: ListView(
+          children: locations
+              .map(
+                (location) => GestureDetector(
+                  child: LocationItem(location.name, location.imagePath),
+                  onTap: () => _onLocationTap(context, location.id),
+                ),
+              )
+              .toList(),
+        ),
       ),
     );
   }
