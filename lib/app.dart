@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_youtube_shop_app/screens/location_detail/location_detail.dart';
+import 'screens/location_detail/location_detail.dart';
 
 import 'style.dart';
 
