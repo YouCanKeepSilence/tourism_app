@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_youtube_shop_app/screens/location_detail/text_block.dart';
+import 'image_banner.dart';
+import 'text_block.dart';
 
 class LocationDetail extends StatelessWidget {
   @override
@@ -10,6 +11,7 @@ class LocationDetail extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            ImageBanner("assets/images/header-thai.jpeg"),
             TextBlock(Colors.red),
             TextBlock(Colors.green),
             TextBlock(Colors.blue),
