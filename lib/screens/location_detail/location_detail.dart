@@ -4,14 +4,18 @@ import 'image_banner.dart';
 import 'text_block.dart';
 
 class LocationDetail extends StatelessWidget {
+
+  final int _locationId;
+
+  LocationDetail(this._locationId);
+
   @override
   Widget build(BuildContext context) {
     // Dummy loading, don't load in build real fetch all
-    final locations = Location.fetchAll();
-    final currentLocation = locations.first;
+    Location? currentLocation = Location.fetchById(this._locationId);
 
     return Scaffold(
-      appBar: AppBar(title: Text(currentLocation.name)),
+      appBar: AppBar(title: Text(currentLocation!.name)),
       body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
