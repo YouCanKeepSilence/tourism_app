@@ -8,7 +8,7 @@ class ImageBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      constraints: BoxConstraints.expand(height: 200.0),
+      constraints: BoxConstraints.expand(height: 250.0),
       decoration: BoxDecoration(color: Colors.grey),
       // To placehold if image not here for loading from server
       child: Image.asset(this._assetPath,
