@@ -16,12 +16,13 @@ class TextBlock extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Container(
-            child: Text(this._title, style: Theme.of(context).textTheme.headline6),
-            padding: const EdgeInsets.fromLTRB(_hPad, 32.0, _hPad, 4.0)
+          child:
+              Text(this._title, style: Theme.of(context).textTheme.headline6),
+          padding: const EdgeInsets.fromLTRB(_hPad, 32.0, _hPad, 4.0),
         ),
         Container(
-            child: Text(this._body, style: Theme.of(context).textTheme.bodyText2),
-            padding: const EdgeInsets.fromLTRB(_hPad, 10.0, _hPad, 4.0)
+          child: Text(this._body, style: Theme.of(context).textTheme.bodyText2),
+          padding: const EdgeInsets.fromLTRB(_hPad, 10.0, _hPad, 4.0),
         ),
       ],
     );

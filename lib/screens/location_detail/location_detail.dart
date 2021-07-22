@@ -6,8 +6,8 @@ class LocationDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text('Location Detail')),
-        body: Column(
+      appBar: AppBar(title: Text('Location Detail')),
+      body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -15,6 +15,7 @@ class LocationDetail extends StatelessWidget {
             TextBlock('Go hard', 'Tuc tuc'),
             TextBlock('Second paragraph', 'Second text'),
             TextBlock('Pow pow', 'GTX 1060'),
-        ]));
+          ]),
+    );
   }
 }

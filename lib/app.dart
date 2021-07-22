@@ -9,10 +9,12 @@ class App extends StatelessWidget {
     return MaterialApp(
       home: LocationDetail(),
       theme: ThemeData(
-          appBarTheme:
-              AppBarTheme(textTheme: TextTheme(headline6: AppBarTextStyle)),
-          textTheme:
-              TextTheme(headline6: TittleTextStyle, bodyText2: BodyTextStyle)),
+        appBarTheme: AppBarTheme(
+          textTheme: TextTheme(headline6: AppBarTextStyle),
+        ),
+        textTheme:
+            TextTheme(headline6: TittleTextStyle, bodyText2: BodyTextStyle),
+      ),
     );
   }
 }
