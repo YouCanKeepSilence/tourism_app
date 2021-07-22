@@ -26,3 +26,10 @@ const BodyTextStyle = TextStyle(
     fontSize: BodyTextSize,
     color: Colors.black
 );
+
+const LocationItemTextStyle = TextStyle(
+    fontFamily: FontNameDefault,
+    fontWeight: FontWeight.w300,
+    fontSize: 25.0,
+    color: Colors.white
+);

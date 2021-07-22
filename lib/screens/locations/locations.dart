@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../app.dart';
 import '../../models/location.dart';
+import 'location_item.dart';
 
 class Locations extends StatelessWidget {
   @override
@@ -14,7 +15,7 @@ class Locations extends StatelessWidget {
         children: locations
             .map(
               (location) => GestureDetector(
-                child: Text(location.name),
+                child: LocationItem(location.name, location.imagePath),
                 onTap: () => _onLocationTap(context, location.id),
               ),
             )
