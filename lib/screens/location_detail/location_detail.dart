@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_youtube_shop_app/screens/location_detail/text_block.dart';
 
 class LocationDetail extends StatelessWidget {
   @override
@@ -9,18 +10,9 @@ class LocationDetail extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Container(
-                decoration: BoxDecoration(color: Colors.red),
-                child: Text('HELLO HELLO HELLO')
-            ),
-            Container(
-                decoration: BoxDecoration(color: Colors.blue),
-                child: Text('HELLO HELLO HELLO')
-            ),
-            Container(
-                decoration: BoxDecoration(color: Colors.green),
-                child: Text('HELLO HELLO HELLO')
-            ),
+            TextBlock(Colors.red),
+            TextBlock(Colors.green),
+            TextBlock(Colors.blue),
         ]));
   }
 }
